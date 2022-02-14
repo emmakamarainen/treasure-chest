@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+} */
+@font-face {
+  font-family: 'florante'; /*a name to be used later*/
+  src: url('components/UI/Florante-at-Laura-fontfacekit/web-fonts/floranteatlaura_italic_macroman/FLORLI__-webfont.woff')
+    format('woff'); /*URL to font*/
+}
+
+.App {
+  font-family: 'florante';
+  text-align: center;
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(8px + 2vmin);
+  color: rgba(0, 0, 0, 0.74);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
