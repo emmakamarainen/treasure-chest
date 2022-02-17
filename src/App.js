@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 // import logo from './logo.svg'
 import './App.css'
 import Card from './components/UI/Card'
@@ -31,6 +31,30 @@ function App() {
     return GoldSelected
   }
 
+  const treasureChests = [
+    {
+      id: 'wood',
+      type: 'Wood',
+      upperLimit: 100,
+      lowerLimit: 0,
+      selected: WoodenSelected,
+    },
+    {
+      id: 'silver',
+      type: 'Silver',
+      upperLimit: 1000,
+      lowerLimit: 100,
+      selected: SilverSelected,
+    },
+    {
+      id: 'gold',
+      type: 'Gold',
+      upperLimit: 1500,
+      lowerLimit: 1000,
+      selected: GoldSelected,
+    },
+  ]
+
   const showChests = () => {
     if (
       [WoodenSelected, SilverSelected, GoldSelected].every(
@@ -39,14 +63,18 @@ function App() {
     )
       return (
         <div>
-          <Chest chestType="Wood" selected={SelectWoodenChest} />
-          <div>{WoodenSelected.toString()}</div>
-
-          <Chest chestType="Silver" selected={SelectSilverChest} />
-          <div>{SilverSelected.toString()}</div>
-
-          <Chest chestType="Gold" selected={SelectGoldChest} />
-          <div>{GoldSelected.toString()}</div>
+          <Chest
+            chestType={treasureChests[0].type}
+            selected={SelectWoodenChest}
+          />
+          <Chest
+            chestType={treasureChests[1].type}
+            selected={SelectSilverChest}
+          />
+          <Chest
+            chestType={treasureChests[2].type}
+            selected={SelectGoldChest}
+          />
         </div>
       )
     return (
@@ -54,6 +82,7 @@ function App() {
         wood={WoodenSelected}
         silver={SilverSelected}
         gold={GoldSelected}
+        treasure={treasureChests}
       />
     )
   }
@@ -63,7 +92,6 @@ function App() {
       <Card className="App-header">
         <p>Treasure Chest</p>
         {showChests()}
-        <div> </div>
       </Card>
     </div>
   )

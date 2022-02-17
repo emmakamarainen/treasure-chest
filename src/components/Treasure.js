@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TreasureItem from './TreasureItem'
 import TreasureGold from './TreasureGold'
+import Button from './UI/Button'
 
 const Treasure = (props) => {
+  const [collected, setCollect] = useState(false)
+
   const treasureitems = [
     {
       id: 'i1',
@@ -18,29 +21,17 @@ const Treasure = (props) => {
     },
   ]
 
-  const showCorrectTreasure = () => {
-    if (props.treasureType === 'Wood')
-      return (
-        <TreasureGold goldUpperLimit={100} goldLowerLimit={0}></TreasureGold>
-      )
-    if (props.treasureType === 'Silver')
-      return (
-        <TreasureGold goldUpperLimit={1000} goldLowerLimit={100}></TreasureGold>
-      )
-    if (props.treasureType === 'Gold')
-      return (
-        <TreasureGold
-          goldUpperLimit={1500}
-          goldLowerLimit={1000}
-        ></TreasureGold>
-      )
+  const handleCollection = () => {
+    setCollect(true)
+    console.log(collected)
   }
 
   return (
     <div>
       <p>You found a chest made of {props.treasureType}!</p>
       <TreasureItem items={treasureitems} />
-      {showCorrectTreasure()}
+      <TreasureGold goldUpperLimit={props.upper} goldLowerLimit={props.lower} />
+      <Button onClick={handleCollection}>Collect</Button>
     </div>
   )
 }
