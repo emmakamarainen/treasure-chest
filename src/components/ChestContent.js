@@ -1,25 +1,25 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Treasure from './Treasure'
 
 const ChestContent = (props) => {
   const showChestContent = () => {
     if (props.wood === true)
       return (
-        <div>
+        <Fragment>
           <Treasure treasureType="Wood" />
-        </div>
+        </Fragment>
       )
     if (props.silver === true)
       return (
-        <div>
+        <Fragment>
           <Treasure treasureType="Silver" />
-        </div>
+        </Fragment>
       )
     if (props.gold === true)
       return (
-        <div>
+        <Fragment>
           <Treasure treasureType="Gold" />
-        </div>
+        </Fragment>
       )
   }
 
