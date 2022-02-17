@@ -3,7 +3,20 @@ import TreasureItem from './TreasureItem'
 import TreasureGold from './TreasureGold'
 
 const Treasure = (props) => {
-  const treasureitems = ['item 1', 'item 2', 'item 3']
+  const treasureitems = [
+    {
+      id: 'i1',
+      item: 'item1',
+    },
+    {
+      id: 'i2',
+      item: 'item2',
+    },
+    {
+      id: 'i3',
+      item: 'item3',
+    },
+  ]
 
   const showCorrectTreasure = () => {
     if (props.treasureType === 'Wood')
