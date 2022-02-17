@@ -1,5 +1,4 @@
-import React, { useRef, useState } from 'react'
-// import logo from './logo.svg'
+import React, { useState } from 'react'
 import './App.css'
 import Card from './components/UI/Card'
 import Chest from './components/Chest'
@@ -77,14 +76,7 @@ function App() {
           />
         </div>
       )
-    return (
-      <ChestContent
-        wood={WoodenSelected}
-        silver={SilverSelected}
-        gold={GoldSelected}
-        treasure={treasureChests}
-      />
-    )
+    return <ChestContent treasure={treasureChests} />
   }
 
   return (
