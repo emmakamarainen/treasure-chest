@@ -3,8 +3,8 @@ import './Chest.css'
 
 const Chest = (props) => {
   return (
-    <div>
-      <button onClick={props.selected} className="chest">
+    <div className="chestrow">
+      <button className="chest" onClick={props.selected}>
         {props.chestType}
       </button>
     </div>

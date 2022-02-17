@@ -1,7 +1,13 @@
+.chestrow {
+  display: inline-block;
+  margin: 5px; /* space between buttons */
+}
+
 .chest {
   font: inherit;
   padding: 0.5rem 1.5rem;
   border: 1px solid #00000056;
+  border-radius: 10px;
   color: #00000081;
   background: #dd9a08;
   cursor: pointer;
@@ -13,6 +19,6 @@
 
 .chest:hover,
 .chest:active {
-  background: #dd9a08;
-  border-color: #dd9a08;
+  background: #9b6c06;
+  border-color: #9b6c06;
 }
