@@ -1,6 +1,9 @@
 body {
   padding: 50px;
-  background-color: #cabe78;
+  z-index: -1;
+  background: url('components/UI/backgrounds/tree-2725198.jpg') 0 0 no-repeat;
+  /* transform: rotate(90deg); */
+  background-size: 310%;
 }
 
 code {
