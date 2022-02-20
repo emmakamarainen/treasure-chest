@@ -17,7 +17,9 @@ const ChestContent = (props) => {
           )
         }
       })}
-      <Button>Collect</Button>
+      <footer>
+        <Button onClick={props.showTreasure}>Collect</Button>
+      </footer>
     </Fragment>
   )
 }

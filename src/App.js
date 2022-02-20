@@ -9,6 +9,11 @@ function App() {
   const [SilverSelected, SelectedSilverChest] = useState(false)
   const [GoldSelected, SelectedGoldChest] = useState(false)
 
+  const ShowTreasureHandler = () => {
+    SelectedWoodenChest(false)
+    SelectedSilverChest(false)
+    SelectedGoldChest(false)
+  }
   const SelectWoodenChest = () => {
     SelectedWoodenChest(true)
     SelectedSilverChest(false)
@@ -76,7 +81,14 @@ function App() {
           />
         </div>
       )
-    return <ChestContent treasure={treasureChests} />
+    return (
+      <div>
+        <ChestContent
+          showTreasure={ShowTreasureHandler}
+          treasure={treasureChests}
+        />
+      </div>
+    )
   }
 
   return (
