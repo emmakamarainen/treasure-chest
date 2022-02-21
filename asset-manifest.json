@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/treasure-chest/static/css/main.501fc1e7.css",
-    "main.js": "/treasure-chest/static/js/main.7e0bcebc.js",
+    "main.css": "/treasure-chest/static/css/main.b7c02236.css",
+    "main.js": "/treasure-chest/static/js/main.9065503e.js",
     "static/js/787.c7f3affe.chunk.js": "/treasure-chest/static/js/787.c7f3affe.chunk.js",
     "static/media/tree-2725198.jpg": "/treasure-chest/static/media/tree-2725198.c43bac5007de6deafa29.jpg",
     "static/media/gold-1867935.jpg": "/treasure-chest/static/media/gold-1867935.b7581f40b5de25fa7261.jpg",
     "static/media/silver-1633584.jpg": "/treasure-chest/static/media/silver-1633584.99eedadec1051b575c52.jpg",
+    "static/media/forest-438432_1920.jpg": "/treasure-chest/static/media/forest-438432_1920.554c3ae812e5afb390a3.jpg",
     "static/media/FLORLI__-webfont.woff": "/treasure-chest/static/media/FLORLI__-webfont.8074253d8b760bc7a676.woff",
     "index.html": "/treasure-chest/index.html",
-    "main.501fc1e7.css.map": "/treasure-chest/static/css/main.501fc1e7.css.map",
-    "main.7e0bcebc.js.map": "/treasure-chest/static/js/main.7e0bcebc.js.map",
+    "main.b7c02236.css.map": "/treasure-chest/static/css/main.b7c02236.css.map",
+    "main.9065503e.js.map": "/treasure-chest/static/js/main.9065503e.js.map",
     "787.c7f3affe.chunk.js.map": "/treasure-chest/static/js/787.c7f3affe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.501fc1e7.css",
-    "static/js/main.7e0bcebc.js"
+    "static/css/main.b7c02236.css",
+    "static/js/main.9065503e.js"
   ]
 }
