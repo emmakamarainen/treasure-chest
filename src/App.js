@@ -93,9 +93,9 @@ function App() {
 
   return (
     <Card
-      className={`App App${woodSelected ? '-wood' : ''} App${
-        silverSelected ? '-silver' : ''
-      } App${goldSelected ? '-gold' : ''}`}
+      className={`App App${woodSelected ? '-wood' : '-home'} App${
+        silverSelected ? '-silver' : '-home'
+      } App${goldSelected ? '-gold' : '-home'}`}
     >
       <Card className="App-header">
         <p>Treasure Chest</p>
