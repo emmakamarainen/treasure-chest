@@ -17,7 +17,26 @@
 .App {
   font-family: 'florante';
   text-align: center;
-  min-height: 50vh;
+  min-height: 100vh;
+}
+
+.App-wood {
+  background: url('./components/UI/backgrounds/tree-2725198.jpg') 0 0;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App-silver {
+  background: url('./components/UI/backgrounds/silver-1633584.jpg') 0 0
+    no-repeat;
+  background-size: cover;
+}
+
+.App-gold {
+  background: url('./components/UI/backgrounds/gold-1867935.jpg') 0 0 no-repeat;
+  background-size: cover;
 }
 
 .App-header {
@@ -28,6 +47,7 @@
   font-size: calc(8px + 2vmin);
   color: rgba(0, 0, 0, 0.74);
 }
+
 /* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

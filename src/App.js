@@ -5,34 +5,34 @@ import Chest from './components/Chest'
 import ChestContent from './components/ChestContent'
 
 function App() {
-  const [WoodenSelected, SelectedWoodenChest] = useState(false)
-  const [SilverSelected, SelectedSilverChest] = useState(false)
-  const [GoldSelected, SelectedGoldChest] = useState(false)
+  const [woodSelected, selectedWoodenChest] = useState(false)
+  const [silverSelected, selectedSilverChest] = useState(false)
+  const [goldSelected, selectedGoldChest] = useState(false)
 
   const ShowTreasureHandler = () => {
-    SelectedWoodenChest(false)
-    SelectedSilverChest(false)
-    SelectedGoldChest(false)
+    selectedWoodenChest(false)
+    selectedSilverChest(false)
+    selectedGoldChest(false)
   }
-  const SelectWoodenChest = () => {
-    SelectedWoodenChest(true)
-    SelectedSilverChest(false)
-    SelectedGoldChest(false)
-    return WoodenSelected
-  }
-
-  const SelectSilverChest = () => {
-    SelectedWoodenChest(false)
-    SelectedSilverChest(true)
-    SelectedGoldChest(false)
-    return SilverSelected
+  const selectWoodChest = () => {
+    selectedWoodenChest(true)
+    selectedSilverChest(false)
+    selectedGoldChest(false)
+    return woodSelected
   }
 
-  const SelectGoldChest = () => {
-    SelectedWoodenChest(false)
-    SelectedSilverChest(false)
-    SelectedGoldChest(true)
-    return GoldSelected
+  const selectSilverChest = () => {
+    selectedWoodenChest(false)
+    selectedSilverChest(true)
+    selectedGoldChest(false)
+    return silverSelected
+  }
+
+  const selectGoldChest = () => {
+    selectedWoodenChest(false)
+    selectedSilverChest(false)
+    selectedGoldChest(true)
+    return goldSelected
   }
 
   const treasureChests = [
@@ -41,27 +41,27 @@ function App() {
       type: 'Wood',
       upperLimit: 100,
       lowerLimit: 0,
-      selected: WoodenSelected,
+      selected: woodSelected,
     },
     {
       id: 'silver',
       type: 'Silver',
       upperLimit: 1000,
       lowerLimit: 100,
-      selected: SilverSelected,
+      selected: silverSelected,
     },
     {
       id: 'gold',
       type: 'Gold',
       upperLimit: 1500,
       lowerLimit: 1000,
-      selected: GoldSelected,
+      selected: goldSelected,
     },
   ]
 
   const showChests = () => {
     if (
-      [WoodenSelected, SilverSelected, GoldSelected].every(
+      [woodSelected, silverSelected, goldSelected].every(
         (stat) => stat === false,
       )
     )
@@ -69,15 +69,15 @@ function App() {
         <div>
           <Chest
             chestType={treasureChests[0].type}
-            selected={SelectWoodenChest}
+            selected={selectWoodChest}
           />
           <Chest
             chestType={treasureChests[1].type}
-            selected={SelectSilverChest}
+            selected={selectSilverChest}
           />
           <Chest
             chestType={treasureChests[2].type}
-            selected={SelectGoldChest}
+            selected={selectGoldChest}
           />
         </div>
       )
@@ -92,12 +92,16 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <Card
+      className={`App App${woodSelected ? '-wood' : ''} App${
+        silverSelected ? '-silver' : ''
+      } App${goldSelected ? '-gold' : ''}`}
+    >
       <Card className="App-header">
         <p>Treasure Chest</p>
         {showChests()}
       </Card>
-    </div>
+    </Card>
   )
 }
 
