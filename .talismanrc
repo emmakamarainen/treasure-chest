@@ -1,4 +1,6 @@
 fileignoreconfig:
+- filename: package-lock.json
+  checksum: 00d1d9337cecf0e9dc64d448dd55852e23c08a8d017a091dc5282d2207600640
 - filename: src/components/Treasure/ChestContent.js
   checksum: 3431384a448d213ecec7219bb95f9f46633f6b1b4dbed8d746b70ec62200bf3e
 - filename: src/components/Treasure/Terrain.js

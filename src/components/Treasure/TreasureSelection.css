@@ -1,0 +1,27 @@
+.Treasure-wood {
+  background: url("./components/UI/backgrounds/tree-2725198.jpg") 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.Treasure-silver {
+  background: url("./components/UI/backgrounds/silver-1633584.jpg") 0 0
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Treasure-gold {
+  background: url("./components/UI/backgrounds/gold-1867935.jpg") 0 0 no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Treasure-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(8px + 2vmin);
+    color: rgba(0, 0, 0, 0.74);
+  }

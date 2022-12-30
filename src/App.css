@@ -18,6 +18,7 @@
   font-family: 'florante';
   text-align: center;
   min-height: 100vh;
+  align-items: center;
 }
 
 .App-home {
@@ -27,24 +28,6 @@
   background-position: center;
 }
 
-.App-wood {
-  background: url('./components/UI/backgrounds/tree-2725198.jpg') 0 0;
-  background-size: cover;
-  background-position: center;
-}
-
-.App-silver {
-  background: url('./components/UI/backgrounds/silver-1633584.jpg') 0 0
-    no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.App-gold {
-  background: url('./components/UI/backgrounds/gold-1867935.jpg') 0 0 no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 .App-header {
   display: flex;
