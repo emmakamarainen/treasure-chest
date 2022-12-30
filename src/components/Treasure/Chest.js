@@ -4,7 +4,7 @@ import './Chest.css'
 const Chest = (props) => {
   return (
     <div className="chestrow">
-      <button className="chest" onClick={props.selected}>
+      <button onClick={props.selected}>
         {props.chestType}
       </button>
     </div>

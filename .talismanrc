@@ -1,0 +1,8 @@
+fileignoreconfig:
+- filename: src/components/Treasure/ChestContent.js
+  checksum: 3431384a448d213ecec7219bb95f9f46633f6b1b4dbed8d746b70ec62200bf3e
+- filename: src/components/Treasure/Terrain.js
+  checksum: 139d0c50a7aae2ab4a5018e5c0aeef5e6cbffbe95ead3d6441ec6ff01809be69
+- filename: src/components/Treasure/TreasureSelection.js
+  checksum: 1ee0afaa56c577b8b4926bdfb7e74e4dbb09a7ad8f33f65ad1a243b99477c9df
+version: "1.0"

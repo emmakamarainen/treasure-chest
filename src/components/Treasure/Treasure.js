@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
 import TreasureItem from './TreasureItem'
 import TreasureGold from './TreasureGold'
+import Item from '../Store/Item'
 
 const Treasure = (props) => {
   const treasureitems = [

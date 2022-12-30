@@ -1,4 +1,4 @@
-import React from 'react'
+import Item from "../Store/Item"
 
 const TreasureItem = (props) => {
   const treasureitems = props.items.map((item, id) => (

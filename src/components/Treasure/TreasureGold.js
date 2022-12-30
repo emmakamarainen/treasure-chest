@@ -1,4 +1,3 @@
-import React from 'react'
 
 const TreasureGold = (props) => {
   const max = props.goldUpperLimit
@@ -7,4 +6,4 @@ const TreasureGold = (props) => {
   return <div> Gold: {goldAmount}</div>
 }
 
-export default TreasureGold
+export default TreasureGold;
